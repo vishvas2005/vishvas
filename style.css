@@ -22,7 +22,28 @@
   margin: 0;
   padding: 0;
 }
-
+.extra{
+  height: 90vh;
+  width: 100%;
+  background-color: #222222;
+  position: absolute;
+  z-index: 100;
+  transition: all ease 1s;
+  top: -100%;
+}
+.extra h1{
+  color: white;
+  font-family: badmosh;
+  font-size: 5vw;
+  text-align: center;
+}
+.extra p{
+  color: white;
+  text-align: center;
+  font-size: 2.3vw;
+  font-family: semi;
+  line-height: 4.5vw;
+}
 .about {
   height: 100%;
   width: 100%;
@@ -53,7 +74,7 @@
   line-height: 2.3vw;
 }
 
-.nav .btn {
+.nav button {
   height: 40px;
   width: 180px;
   background-color: #43D5EA;
@@ -64,8 +85,12 @@
   font-family: semi;
   box-shadow: 0 0 30px #0ef;
   transition: all ease 0.5s;
+  color: white;
+  border-style: none;
 }
-
+.bkl:hover{
+  cursor: pointer;
+}
 .nav .btn:hover {
   scale: 1.1;
   cursor: pointer;
@@ -264,17 +289,13 @@
   padding: 0vw 3vw;
 }
 
-.red {
-  height: 50px;
-  width: 52px;
-  border-radius: 50%;
-  background-color: cyan;
-  color: white;
-  gap: 3vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 25px cyan;
+.work{
+    height: 50px;
+    width: 50px;
+    background-color: cyan;
+    border-radius: 50%;
+    border-style:none;
+    font-size: 2vw;
 }
 
 .button3 {
@@ -315,6 +336,33 @@
 
 
 @media (max-width:600px) {
+  .extra{
+    height: 80vh;
+    width: 100%;
+    background-color: #222222;
+    position: absolute;
+    z-index: 100;
+    top: -100%;
+    transition: all ease 1s;
+    border-bottom-left-radius: 10vw;
+    border-bottom-right-radius: 10vw;
+  }
+  .extra h1{
+    color: white;
+    font-family: badmosh;
+    font-size: 15vw;
+    text-align: center;
+    margin-top: 16vw;
+  }
+  .extra p{
+    color: white;
+    text-align: center;
+    font-size: 6.3vw;
+    font-family: semi;
+    line-height: 9.5vw;
+  }
+  
+  
   .about {
     height:100%;
     width: 100%;
@@ -385,7 +433,7 @@
     height: 300px;
     width: 400px;
     background-size: cover;
-    padding: 25vw 2vw;
+   padding-top: 25vw;
   }
   
   .nav2 h2 {
