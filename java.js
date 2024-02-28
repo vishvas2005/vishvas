@@ -73,13 +73,23 @@ function anime(){
     }
   })
 }
-anime();
 
-var butten = document.querySelector(".bkl");
-var slider = document.querySelector(".extra")
-butten.addEventListener('click',function(){
-    slider.style.top="0%"
-});
-butten.addEventListener('mouseleave',function(){
-  slider.style.top="-100%"
-});
+
+
+function slider(){
+  var butten = document.querySelector(".bkl");
+  var slider = document.querySelector(".extra")
+  butten.addEventListener('click',function(){
+      slider.style.top="0%"
+  });
+  butten.addEventListener('mouseleave',function(){
+    slider.style.top="-100%"
+  });
+  
+}
+
+
+
+
+anime();
+slider();
