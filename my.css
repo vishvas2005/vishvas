@@ -800,7 +800,8 @@
        width: 90vw;
        margin-left: 2vw;
        position: absolute;
-       top: -30vw;
+       top: -50vw;
+       right: 4vw;
      }
      .pt{
        margin-top: 80vw;
